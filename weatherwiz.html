@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Wiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 3em;
+    }
+
+    form {
+      margin: 20px auto;
+      max-width: 400px;
+    }
+
+    input[type="text"] {
+      width: 70%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      padding: 12px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .weather-result {
+      margin-top: 30px;
+      background-color: #ffffffc0;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .footer {
+      margin-top: 50px;
+      color: #fff;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🌦️ Weather Wiz 🌦️</h1>
+
+  <form method="POST" action="/get_weather">
+    <input type="text" name="city" placeholder="Enter city name" required>
+    <input type="submit" value="Get Weather">
+  </form>
+
+  <!-- Sample result block - Dynamically fill this using Python -->
+  <div class="weather-result">
+    <h2>City: Hyderabad</h2>
+    <p>Temperature: 30°C</p>
+    <p>Humidity: 60%</p>
+    <p>Condition: Clear Sky</p>
+  </div>
+
+  <div class="footer">Designed by Hemasri | Powered by Weather API</div>
+
+</body>
+
+</html>
