@@ -16,7 +16,9 @@ The main goal of the project was to practice my HTML skills and create a functio
 The page contains sections like:
 
 Header: Project name and basic introduction
+
 Main Content: A weather report table with sample data (temperature, humidity, wind speed, etc.)
+
 Footer: A simple note or credits section
 The design is kept minimal and responsive, focusing on semantic HTML and clean structure without adding CSS or JavaScript (if not required).
 
